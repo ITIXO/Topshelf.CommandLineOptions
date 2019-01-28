@@ -21,9 +21,9 @@ HostFactory.Run(configure =>
 {
     var commandLineOptions = configure.GetCommandlineOptions<CommandLineOptions>();
 
-    configure.Service<BookByDateServiceRunner>(service =>
+    configure.Service<MyServiceRunner>(service =>
     {
-        service.ConstructUsing(s => new BookByDateServiceRunner());
+        service.ConstructUsing(s => new MyServiceRunner());
         service.WhenStarted(s => s.Start(commandLineOptions));
         service.WhenStopped(s => s.Stop());
     });
