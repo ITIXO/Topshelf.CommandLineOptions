@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netstandard2.0;net452</TargetFrameworks>
+    <PackageId>Topshelf.CommandLineOptions</PackageId>
+    <Title>Topshelf.CommandLineOptions</Title>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Václav Holuša</Authors>
+    <Company>Itixo s.r.o.</Company>
+    <AssemblyVersion>0.1.0</AssemblyVersion>
+    <Version>0.1.0</Version>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/vaclavholusa/Topshelf.CommandLineOptions</PackageProjectUrl>
+    <Description>Topshelf.CommandLineOptions provides extension to use CommandLine options when installing and launching apps build using Topshelf.</Description>
+    <PackageTags>Topshelf CommandLine</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../LICENSE.txt" Pack="true" PackagePath="$(PackageLicenseFile)">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Topshelf" Version="4.2.0" />
+  </ItemGroup>
+</Project>
