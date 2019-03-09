@@ -9,7 +9,7 @@
     <Authors>Václav Holuša</Authors>
     <Company>Itixo s.r.o.</Company>
     <AssemblyVersion>0.1.0</AssemblyVersion>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
     <PackageProjectUrl>https://github.com/vaclavholusa/Topshelf.CommandLineOptions</PackageProjectUrl>
     <Description>Topshelf.CommandLineOptions provides extension to use CommandLine options when installing and launching apps build using Topshelf.</Description>

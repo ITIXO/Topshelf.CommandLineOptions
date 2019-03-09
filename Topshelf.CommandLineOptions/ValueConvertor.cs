@@ -8,6 +8,11 @@ namespace Topshelf.CommandLineOptions
         {
             if (typeof(IConvertible).IsAssignableFrom(targetType))
             {
+                if (targetType == typeof(bool) && value.ToString()?.Length == 0)
+                {
+                    return true; // boolean property needs just a flag, no need for a value
+                }
+
                 return Convert.ChangeType(value ?? defaultValue ?? targetType.GetDefaultValue(), targetType);
             }
             else
